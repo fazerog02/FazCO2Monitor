@@ -1,0 +1,8 @@
+Django
+djangorestframework
+djangorestframework-jwt
+numpy
+matplotlib
+django-filter
+pyserial
+schedule

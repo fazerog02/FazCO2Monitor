@@ -1,0 +1,21 @@
+#nowppm{
+    color: orange;
+    font-size: 30vw;
+    font-family: '7barP';
+    text-decoration: none;
+}
+
+.card span span{
+    font-size: 5vw;
+}
+
+.Evaluation{
+    font-size: 20vw;
+    transform: rotateZ(90deg);
+}
+
+.Evaluation span{
+    color: gray;
+    display: block;
+    margin: 5vw;
+}

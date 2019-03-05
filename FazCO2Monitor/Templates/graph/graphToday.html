@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block head %}
+    <link rel="stylesheet" href="{% static 'css/graph.css' %}" type="text/css">
+{% endblock %}
+{% block body %}
+    <p>Today's Graph</p>
+    <img src="{% static 'img/plot.png' %}">
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block head %}
+    <link rel="stylesheet" href="{% static 'css/graph.css' %}" type="text/css">
+{% endblock %}
+{% block body %}
+    <form method="post">
+    {% csrf_token %}
+    <input type="month" name="chosenMonth">
+    <input type="submit">
+    </form>
+    {% if ppmdataList != None and lenPpmdataList > 0 %}
+        <p style="color: orange;">{{ chosenMonth }}'s Graph</p>
+        <img src="{% static 'img/plot.png' %}">
+    {% endif %}
+{% endblock %}

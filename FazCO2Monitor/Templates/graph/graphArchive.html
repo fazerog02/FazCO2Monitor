@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block head %}
+    <link rel="stylesheet" href="{% static 'css/graph.css' %}" type="text/css">
+{% endblock %}
+{% block body %}
+    <p>Graph Archives</p>
+    <div class="Button"><a href="/graph/date">DATE</a></div>
+    <div class="Button"><a href="/graph/month">MONTH</a></div>
+    <div class="Button"><a href="/graph/year">YEAR</a></div>
+{% endblock %}
